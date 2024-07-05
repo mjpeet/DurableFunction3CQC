@@ -1,0 +1,43 @@
+
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET http://localhost:7195/api/Function2_ClientFunction
+#
+###
+POST http://localhost:7195/api/Function2_ClientFunction
+
+### Function1.cs
+GET http://localhost:7195/api/Function1_HttpStart
+
+###
+POST http://localhost:7195/api/Function1_HttpStart
+
+### HostAddress - see http-client.env.json
+### or check in .vscode\settings.json
+GET http://localhost:7195/api/Function3_ClientFunction
+
+###
+POST http://localhost:7195/api/Function3_ClientFunction
+
+### CQC api test requests
+
+### get inspection areas 
+### https://apiabout:blank#formatted-portal.service.cqc.org.uk/api-details#api=syndication&operation=get-inspection-areas
+### this works
+GET https://api.service.cqc.org.uk/public/v1/inspection-areas
+<CQC subscription key name>: <CQC subsciption key>
+### use primary key
+### /locations
+
+GET https://api.service.cqc.org.uk/public/v1/locations  HTTP/1.1
+<CQC subscription key name>: <CQC subsciption key>
+
+### 
+GET https://api.service.cqc.org.uk/public/v1/locations?perPage=1000  HTTP/1.1
+<CQC subscription key name>: <CQC subsciption key>
+
+### use secondary key
+### 
+GET https://api.service.cqc.org.uk/public/v1/locations?page=2  HTTP/1.1
+<CQC subscription key name>: <CQC subsciption key>
+
+

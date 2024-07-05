@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "DurableFunction3CQC": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7195",
+      "launchBrowser": false
+    }
+  }
+}

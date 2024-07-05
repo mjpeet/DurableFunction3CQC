@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    },
+    "fileLoggingMode": "always",
+    "logLevel": {
+      "Function": "Trace"
+    },
+    "logLevel_comment": {
+      "default": "Information",
+      "Host.Results": "Error",
+      "Function": "Trace",
+      "Host.Aggregator": "Trace"
+    }
+  }
+}
